@@ -62,7 +62,13 @@
   
   .search {
     background-color: #d35266;
-    height: 3rem;
+    height: 4rem;
+    padding-top: 1rem;
+  }
+  
+  .search__searchForm {
+    margin: auto;
+    width: max-content;
   }
   
   .searchButton {
@@ -74,6 +80,7 @@
   
   .searchInput {
     height: 2rem;
+    border: 0;
   }
   
   @media screen and (min-width: 425px) {
