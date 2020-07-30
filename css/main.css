@@ -68,7 +68,8 @@
   
   .search__searchForm {
     margin: 20px auto 0 auto;
-    width: max-content;
+    width: 90%;
+    max-width: 750px;
   }
   
   .search__title,
@@ -88,6 +89,7 @@
     color: #383838;
     border: 0;
     margin-left: 0.1rem;
+    flex-grow: 1;
   }
   
   .searchFormElement_button {
