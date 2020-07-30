@@ -15,6 +15,10 @@
     box-sizing: border-box;
   }
   
+  .gallery {
+    display: flex;
+  }
+  
   .header {
     background-color: #383838;
     padding: 10px;
@@ -99,20 +103,22 @@
     margin-bottom: auto;
   }
   
-  .hotAds__sectionTitle {
+  .main__sectionTitle {
     position: relative;
     margin: 20px 0 20px 50px;
   }
   
   .main__hotAds {
-    width: 95%;
-    max-width: 768px;
-    margin: auto;
     display: none;
   }
   
   .main__header {
     width: 100%;
+  }
+  
+  .main__promptDelivery {
+    width: 95%;
+    margin: auto;
   }
   
   .search {
@@ -190,8 +196,12 @@
   
   .sectionTitle {
     color: #888888;
-    text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+  
+  .sectionTitleComplement {
+    font-size: 0.9rem;
+    font-weight: normal;
   }
   
   @media screen and (min-width: 425px) {
@@ -215,6 +225,9 @@
     }
     .main__hotAds {
       display: block;
+      width: 95%;
+      max-width: 768px;
+      margin: auto;
     }
     .search {
       display: block;
