@@ -61,11 +61,14 @@
   .hotAd {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: min-content;
   }
   
   .hotAdText {
     text-align: left;
     width: 40%;
+    margin: 0;
   }
   
   .hotAdText__button1 {
@@ -76,6 +79,7 @@
   .hotAdText_title {
     font-size: 1.1rem;
     color: #d35266;
+    margin-top: 0;
   }
   
   .hotAdText_description {
@@ -83,14 +87,11 @@
     color: #383838;
   }
   
-  .hotAds {
-    height: 120px;
-  }
+  .hotAds {}
   
   .hotAdsImg {
-    max-width: 30%;
-    height: auto;
-    aspect-ratio: 16/9;
+    max-width: 40%;
+    height: 100%;
   }
   
   .hotAds_slide {
@@ -98,8 +99,13 @@
     margin-bottom: auto;
   }
   
+  .hotAds__sectionTitle {
+    position: relative;
+    margin: 20px 0 20px 50px;
+  }
+  
   .main__hotAds {
-    width: 90%;
+    width: 95%;
     max-width: 768px;
     margin: auto;
     display: none;
@@ -185,7 +191,7 @@
   .sectionTitle {
     color: #888888;
     text-transform: uppercase;
-    padding-left: 50px;
+    font-size: 1.25rem;
   }
   
   @media screen and (min-width: 425px) {
