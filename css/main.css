@@ -23,6 +23,10 @@
     justify-content: space-around;
   }
   
+  .header__button1 {
+    display: none
+  }
+  
   .logoText {
     color: white;
     margin: 0;
@@ -47,13 +51,11 @@
     list-style: none;
   }
   
-  .headerButton {
+  .button1 {
     background-color: #d35266;
     border: 0;
     color: white;
     padding: 10px;
-    text-transform: uppercase;
-    display: none;
   }
   
   .hotAd {
@@ -63,6 +65,12 @@
   
   .hotAdText {
     text-align: left;
+    width: 40%;
+  }
+  
+  .hotAdText__button1 {
+    float: left;
+    margin: 0.5px;
   }
   
   .hotAdText_title {
@@ -80,10 +88,9 @@
   }
   
   .hotAdsImg {
-    width: 180px;
-    background-image: url(images/sax.jpg);
-    background-size: contain;
-    float: left;
+    max-width: 30%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
   
   .hotAds_slide {
@@ -197,7 +204,7 @@
     .header {
       padding: 10px 50px;
     }
-    .headerButton {
+    .button1 {
       display: block;
     }
     .main__hotAds {
