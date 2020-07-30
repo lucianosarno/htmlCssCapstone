@@ -62,14 +62,20 @@
   
   .search {
     background-color: #d35266;
-    height: 4rem;
-    padding-top: 1rem;
+    padding: 2rem;
     display: none;
   }
   
   .search__searchForm {
-    margin: auto;
+    margin: 20px auto 0 auto;
     width: max-content;
+  }
+  
+  .search__title,
+  .search__slogan {
+    margin: auto;
+    width: fit-content;
+    line-height: 2rem;
   }
   
   .searchForm {
@@ -89,6 +95,15 @@
     color: #888888;
     height: 2rem;
     margin-left: 0.6rem;
+  }
+  
+  .slogan,
+  .title {
+    color: white;
+  }
+  
+  .title {
+    font-size: 2rem;
   }
   
   @media screen and (min-width: 425px) {
