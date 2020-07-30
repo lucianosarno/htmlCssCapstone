@@ -56,8 +56,23 @@
     display: none;
   }
   
+  .hotAds {
+    height: 120px;
+  }
+  
+  .hotAdsImg {
+    width: 180px;
+    background-image: url(images/sax.jpg);
+    background-size: contain;
+  }
+  
   .hotAds__sectionTitle {
     margin-left: 50px;
+  }
+  
+  .hotAds_slide {
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
   .main__hotAds {
@@ -111,14 +126,26 @@
   }
   
   .slide {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     color: #d35266;
     border: 1px solid #888888;
-    border-radius: 20px;
-    line-height: 30px;
+    border-radius: 1.5rem;
+    line-height: 1rem;
+    padding-left: -2rem;
+    padding-top: 0.45rem;
     text-align: center;
     font-weight: 900;
+  }
+  
+  .slide::after {
+    content: ">";
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-top: 2px solid #d35266;
+    border-left: 2px solid #d35266;
+    transform: scaleY(2);
   }
   
   .slogan,
