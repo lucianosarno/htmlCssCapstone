@@ -9,6 +9,8 @@ html {
 .header {
   background-color: #383838;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .logoText {
   color: white;
@@ -20,6 +22,8 @@ html {
 .headerLink {
   list-style: outside;
   color: #888888;
+  padding: 3px 5px;
+  text-decoration: none;
 }
 .headerLink_home {
   color: #d35266;
