@@ -17,6 +17,15 @@ html {
   width: max-content;
   display: inline;
 }
-.topMenuLink {
+.headerLink {
+  list-style: outside;
+  color: #888888;
+}
+.headerLink_home {
   color: #d35266;
+  margin-left: auto;
+}
+.headerMenu {
+  color: #888888;
+  list-style: none;
 }
