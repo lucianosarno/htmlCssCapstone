@@ -56,6 +56,17 @@
     display: none;
   }
   
+  .hotAds__sectionTitle {
+    margin-left: 50px;
+  }
+  
+  .main__hotAds {
+    width: 90%;
+    max-width: 768px;
+    margin: auto;
+    display: none;
+  }
+  
   .main__header {
     width: 100%;
   }
@@ -99,6 +110,17 @@
     margin-left: 0.6rem;
   }
   
+  .slide {
+    width: 30px;
+    height: 30px;
+    color: #d35266;
+    border: 1px solid #888888;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 900;
+  }
+  
   .slogan,
   .title {
     color: white;
@@ -106,6 +128,11 @@
   
   .title {
     font-size: 2rem;
+  }
+  
+  .sectionTitle {
+    color: #888888;
+    text-transform: uppercase;
   }
   
   @media screen and (min-width: 425px) {
@@ -125,6 +152,9 @@
       padding: 10px 50px;
     }
     .headerButton {
+      display: block;
+    }
+    .main__hotAds {
       display: block;
     }
     .search {
