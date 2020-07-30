@@ -60,6 +60,22 @@
     width: 100%;
   }
   
+  .search {
+    background-color: #d35266;
+    height: 3rem;
+  }
+  
+  .searchButton {
+    border: 0;
+    background-color: #383838;
+    color: #888888;
+    height: 2rem;
+  }
+  
+  .searchInput {
+    height: 2rem;
+  }
+  
   @media screen and (min-width: 425px) {
     html {
       font-size: 14px;
