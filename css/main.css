@@ -83,6 +83,11 @@
     border: 0;
   }
   
+  .searchSelect {
+    height: 2rem;
+    border: 0;
+  }
+  
   @media screen and (min-width: 425px) {
     html {
       font-size: 14px;
