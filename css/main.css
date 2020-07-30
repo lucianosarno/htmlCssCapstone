@@ -64,6 +64,7 @@
     background-color: #d35266;
     height: 4rem;
     padding-top: 1rem;
+    display: none;
   }
   
   .search__searchForm {
@@ -71,21 +72,23 @@
     width: max-content;
   }
   
-  .searchButton {
+  .searchForm {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+  }
+  
+  .searchFormElement {
+    color: #383838;
     border: 0;
+    margin-left: 0.1rem;
+  }
+  
+  .searchFormElement_button {
     background-color: #383838;
     color: #888888;
     height: 2rem;
-  }
-  
-  .searchInput {
-    height: 2rem;
-    border: 0;
-  }
-  
-  .searchSelect {
-    height: 2rem;
-    border: 0;
+    margin-left: 0.6rem;
   }
   
   @media screen and (min-width: 425px) {
@@ -105,6 +108,9 @@
       padding: 10px 50px;
     }
     .headerButton {
+      display: block;
+    }
+    .search {
       display: block;
     }
   }
