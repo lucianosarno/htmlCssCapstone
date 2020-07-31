@@ -150,6 +150,16 @@
         padding: 10px;
       }
       
+      .filter {
+        background-color: #f6f6f6;
+        border-right: 1px solid #888888;
+      }
+      
+      .main__filter {
+        width: 20%;
+        height: 100%;
+      }
+      
       .hotAd {
         display: flex;
         justify-content: space-around;
