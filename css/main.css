@@ -31,11 +31,12 @@
   
   .galleryItem__plusButton1 {
     margin: 0;
+    float: left;
   }
   
   .galleryItem__galleryItemPrice {
-    float: left;
-    display: inline;
+    float: right;
+    margin: 0;
   }
   
   .galleryItemImg {
@@ -62,6 +63,7 @@
   .galleryItemPrice {
     color: #d35266;
     font-size: 0.9rem;
+    line-height: 20px;
     font-weight: bold;
     width: fit-content;
   }
