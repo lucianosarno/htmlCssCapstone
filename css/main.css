@@ -19,6 +19,16 @@
     display: flex;
   }
   
+  .galleryItem {
+    background-color: white;
+    max-width: 250px;
+  }
+  
+  .galleryItemImg {
+    width: 90%;
+    margin: auto;
+  }
+  
   .header {
     background-color: #383838;
     padding: 10px;
@@ -91,7 +101,9 @@
     color: #383838;
   }
   
-  .hotAds {}
+  .hotAds {
+    background-color: white;
+  }
   
   .hotAdsImg {
     max-width: 40%;
@@ -103,9 +115,13 @@
     margin-bottom: auto;
   }
   
+  .main {
+    background-color: #f9f9f9;
+  }
+  
   .main__sectionTitle {
     position: relative;
-    margin: 20px 0 20px 50px;
+    margin: 0 0 20px 50px;
   }
   
   .main__hotAds {
@@ -117,7 +133,8 @@
   }
   
   .main__promptDelivery {
-    width: 95%;
+    max-width: 768px;
+    width: 100%;
     margin: auto;
   }
   
@@ -225,9 +242,9 @@
     }
     .main__hotAds {
       display: block;
-      width: 95%;
-      max-width: 768px;
-      margin: auto;
+      width: 100%;
+      padding: 20px calc((100% - 748px)/2);
+      margin: 0 auto;
     }
     .search {
       display: block;
