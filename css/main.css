@@ -172,7 +172,7 @@
         .filter {
           background-color: #f6f6f6;
           border-right: 1px solid #888888;
-          padding: 20px 0 20px 40px;
+          padding: 20px;
         }
         
         .filterForm {}
@@ -237,6 +237,25 @@
         
         .main__filter {
           width: 100%;
+          height: 30px;
+          opacity: 0;
+          transform: scaleY(0.01);
+          transition: all 300ms ease;
+        }
+        
+        .main__filter::after {
+          content: "Filter";
+          width: min-content;
+          transform: scaleY(1);
+          opacity: 1;
+          display: block;
+          margin: auto;
+          transition-delay: 10000000s;
+        }
+        
+        .main__filter:hover {
+          transform: scaleY(1);
+          opacity: 1;
           height: 100%;
         }
         
@@ -403,6 +422,9 @@
             height: 30px;
             padding: 0;
           }
+          .filter {
+            padding-left: 40px;
+          }
           .footer {
             padding: 20px calc((100% - 748px)/2);
           }
@@ -460,7 +482,7 @@
             content: "";
             display: block;
           }
-          .main__filter {
+          .main__filter:hover {
             width: 250px;
             margin: 0;
             float: left;
