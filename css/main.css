@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    /* padding: 5px 0; */
   }
   
   .gallery__galleryItem {
@@ -292,9 +293,13 @@
     .galleryItem:hover {
       max-width: 165px;
       transform: scale(1.1);
-      padding: 11px;
+      padding: 17.5px;
       margin: 0 30px;
+      transform: translateY(5px);
       ;
+    }
+    .gallery__slide2 {
+      margin: 5px 0;
     }
     .main__hotAds {
       display: block;
@@ -337,7 +342,7 @@
     .slide2 {
       display: block;
       width: 2rem;
-      height: 286.38px;
+      height: 305px;
       color: #383838;
       background-color: white;
       line-height: 286.38px;
@@ -358,7 +363,7 @@
     }
     .slide1:hover,
     .slide2:hover {
-      transform: scale(1.1);
-      margin: 0 5px;
+      transform: scaleX(1.1);
+      margin: 5px 5px;
     }
   }
