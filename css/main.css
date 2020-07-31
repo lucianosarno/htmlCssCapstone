@@ -27,7 +27,7 @@
       .footer {
         background-color: white;
         border-top: 0.1px solid #888888;
-        padding: 10px;
+        padding: 30px;
       }
       
       .footer__logoText {
@@ -208,6 +208,10 @@
         display: inline-block;
       }
       
+      .main__footer {
+        height: 250px;
+      }
+      
       .main__gallery {
         position: relative;
         margin-bottom: 20px;
@@ -293,7 +297,6 @@
       .sectionTitle {
         color: #888888;
         font-size: 1.1rem;
-        /* padding: 0.45rem 0; */
         line-height: 1.1rem;
         vertical-align: top;
       }
@@ -320,33 +323,47 @@
         html {
           font-size: 16px;
         }
-        hr {
+        .hrSm {
           display: none;
         }
         .button1 {
           display: block;
         }
-        .footer__categoriesBox {
-          width: 50%;
-          margin-left: 20px;
-          float: left;
-        }
-        .footer__categoriesBox::after {
-          content: "";
-          display: block;
-          clear: both;
+        .copyright {
+          height: 30px;
+          padding: 0;
         }
         .footer__about,
         .footer__logoText {
           margin: 10px 0;
           float: none;
         }
+        .footer__categoriesBox {
+          width: 50%;
+          margin-left: 60px;
+          float: left;
+        }
         .footer__copyright {
           width: 100%;
+          margin: 50px auto 0;
+          display: block;
+          position: relative;
+          top: 30px;
+        }
+        .footer__sectionTitle {
+          margin: 0;
+          line-height: 2rem;
         }
         .footer__textBox {
           float: left;
           width: 40%;
+        }
+        .footer__copyright::after,
+        .footer__copyright::before,
+        .footer__textBox::after {
+          content: "";
+          display: block;
+          clear: both;
         }
         .galleryItem:hover {
           max-width: 160px;
