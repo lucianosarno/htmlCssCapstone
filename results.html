@@ -41,12 +41,32 @@
             </form>
         </section>
         <section class="filter main__filter">
-            <form action="#">
+            <form class="filterForm" action="#">
+                <label class="label label-title" for="instrumentType">Type of instrument:</label>
                 <input type="checkbox" name="instrumentType" id="wind" value="wind">
-                <label for="wind">Wind</label>
+                <label class="label label-field" for="wind">Wind</label>
                 <input type="checkbox" name="instrumentType" id="percussion" value="percussion">
-                <label for="percussion">Percussion</label>
+                <label class="label label-field" for="percussion">Percussion</label>
+                <input type="checkbox" name="instrumentType" id="string" value="string">
+                <label class="label label-field" for="string">String</label>
+                <label class="label label-title" for="instrumentType">Purchase type:</label>
+                <input type="checkbox" name="purchaseType" id="prompt" value="prompt">
+                <label class="label label-field" for="prompt">Prompt delivery</label>
+                <input type="checkbox" name="purchaseType" id="shipped" value="shipped">
+                <label class="label label-field" for="shipped">Shipped</label>
+                <label class="label label-title" for="instrumentType">Price range:</label>
+                <input type="checkbox" name="purchaseType" id="range1" value="range1">
+                <label class="label label-field" for="range1">$0 - $99</label>
+                <input type="checkbox" name="purchaseType" id="range2" value="range2">
+                <label class="label label-field" for="range2">$100 - $999</label>
+                <input type="checkbox" name="purchaseType" id="range3" value="range3">
+                <label class="label label-field" for="range3">$1000 - $9999</label>
+                <input type="checkbox" name="purchaseType" id="range4" value="range4">
+                <label class="label label-field" for="range4">$10000+</label>
             </form>
+        </section>
+        <section class="results">
+            <p>4 results in our database</p>
         </section>
     </main>
     <footer class="footer main__footer">
