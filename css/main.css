@@ -138,9 +138,15 @@
     background-color: #f9f9f9;
   }
   
+  .main__sectionIcon {
+    margin: 20px 0 0 20px;
+    display: inline-block;
+  }
+  
   .main__sectionTitle {
-    position: relative;
-    margin: 0 0 20px 50px;
+    margin: 20px 0 0 10px;
+    width: 80%;
+    display: inline-block;
   }
   
   .main__hotAds {
@@ -233,6 +239,9 @@
   .sectionTitle {
     color: #888888;
     font-size: 1.1rem;
+    /* padding: 0.45rem 0; */
+    line-height: 1.1rem;
+    vertical-align: top;
   }
   
   .sectionTitleComplement {
@@ -264,6 +273,12 @@
       width: 100%;
       padding: 20px calc((100% - 748px)/2);
       margin: 0 auto;
+    }
+    .main__sectionIcon {
+      margin: 0 0 20px 50px;
+    }
+    .main__sectionTitle {
+      /* margin: 0 0 20px 50px; */
     }
     .search {
       display: block;
