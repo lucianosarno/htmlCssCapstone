@@ -17,16 +17,35 @@
   
   .gallery {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .galleryItem {
     background-color: white;
-    max-width: 250px;
+    max-width: 180px;
+    padding: 10px;
   }
   
   .galleryItemImg {
-    width: 90%;
-    margin: auto;
+    display: block;
+    width: 100%;
+  }
+  
+  .galleryItemTitle {
+    color: #383838;
+    font-size: 0.9rem;
+  }
+  
+  .galleryItemStatus {
+    color: #d35266;
+    font-size: 0.8rem;
+  }
+  
+  .galleryItemPlace {
+    color: #d35266;
+    font-size: 0.8rem;
   }
   
   .header {
