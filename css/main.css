@@ -237,26 +237,26 @@
         
         .main__filter {
           width: 100%;
-          height: 30px;
-          opacity: 0;
+          height: 20px;
           transform: scaleY(0.01);
-          transition: all 300ms ease;
+          transition: transform 3000ms ease, opacity 10ms linear;
+        }
+        
+        .main__filter:hover {
+          transform: scaleY(1);
+          height: 100%;
         }
         
         .main__filter::after {
           content: "Filter";
           width: min-content;
-          transform: scaleY(1);
-          opacity: 1;
+          transform: scaleY(100);
           display: block;
           margin: auto;
-          transition-delay: 10000000s;
         }
         
-        .main__filter:hover {
-          transform: scaleY(1);
-          opacity: 1;
-          height: 100%;
+        .main__filter:hover::after {
+          opacity: 0;
         }
         
         .main__footer {
@@ -482,10 +482,18 @@
             content: "";
             display: block;
           }
-          .main__filter:hover {
+          .main__filter {
             width: 250px;
+            height: ;
             margin: 0;
             float: left;
+            transition: none;
+            opacity: 1;
+            transform: scaleY(1);
+          }
+          .main__filter::after {
+            display: none;
+            clear: both;
           }
           .main__hotAds {
             display: block;
