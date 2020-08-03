@@ -322,27 +322,7 @@
         }
         
         .main__results {
-          float: left;
           width: 100%;
-        }
-        
-        .results__result::after {
-          content: "resultTESTE";
-        }
-        
-        .resultTexts::after {
-          content: "resultTextsTESTE";
-        }
-        
-        main::after {
-          content: "mainTESTE";
-        }
-        
-        .results__result::after,
-        .resultTexts::after,
-        .main::after {
-          display: block;
-          clear: both;
         }
         
         .plusButton1 {
@@ -373,18 +353,19 @@
         }
         
         .results__result {
-          margin: 10px;
+          margin: 10px 0;
           max-width: 300px;
         }
         
         .results__img {
           width: 100%;
-          height: 100%;
+          /* height: 100%; */
           /* max-width: 250px; */
         }
         
         .results__resultsTitle {
-          margin: 0;
+          margin: auto;
+          text-align: center;
           width: 100%;
         }
         
