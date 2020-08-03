@@ -19,6 +19,7 @@
         .about {
           color: #888888;
           text-align: justify;
+          /* max-width: 300px; */
           display: block;
           margin: 10px auto;
         }
@@ -31,7 +32,6 @@
         
         .footer__logoText {
           display: block;
-          margin: 10px auto;
           width: 100%;
           text-align: center;
         }
@@ -168,10 +168,6 @@
           border: 0;
           color: white;
           padding: 10px;
-        }
-        
-        .button1-wider {
-          padding: 10px 30px;
         }
         
         .filter {
@@ -350,18 +346,12 @@
         }
         
         .result {
-          padding: calc(30px + 0.025*(100vw - 768px));
+          padding: calc(10px + 0.05*(100vw - 768px));
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           background-color: white;
-          box-shadow: 0 0 5px #888888;
-          transition: all 300ms;
-        }
-        
-        .result:hover {
-          transform: scale(1.025);
-          box-shadow: 0 0 10px #888888;
+          box-shadow: 0 0 3px #888888;
         }
         
         .results {
@@ -369,12 +359,10 @@
           background-color: #f6f6f6;
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
         }
         
         .results__result {
           margin: 10px 0;
-          width: 48%;
         }
         
         .results__img {
@@ -431,8 +419,7 @@
           margin-left: 0.6rem;
         }
         
-        .slide2,
-        .slide3 {
+        .slide2 {
           display: none;
         }
         
@@ -472,10 +459,13 @@
         
         @media screen and (min-width: 768px) {
           html {
-            font-size: calc(16px + 0.0075 * (100vw - 768px));
+            font-size: calc(16px + 0.0125 * (100vw - 768px));
           }
           .hrSm {
             display: none;
+          }
+          .button1 {
+            display: block;
           }
           .copyright {
             height: 30px;
@@ -491,6 +481,11 @@
           .footer {
             padding: 20px calc((100% - 688px)/4);
           }
+          .footer__about,
+          .footer__logoText {
+            margin: 10px 0;
+            float: none;
+          }
           .footer__categoriesBox {
             width: 50%;
             margin-left: 60px;
@@ -502,6 +497,10 @@
             display: block;
             position: relative;
             top: 30px;
+          }
+          .footer__logoText {
+            text-align: center;
+            margin: 0;
           }
           .footer__sectionTitle {
             margin: 0;
@@ -536,9 +535,6 @@
           .header {
             padding: 10px 50px;
           }
-          .header__button1 {
-            display: block;
-          }
           .label-field::after {
             content: "";
             display: block;
@@ -565,7 +561,14 @@
           }
           .main__results {
             width: calc(100% - 250px - 5%);
+            /* float: right; */
           }
+          /* .main::after,
+          .main__results::after {
+            content: "";
+            display: block;
+            clear: both;
+          } */
           .main__sectionIcon {
             margin: 0 0 0 20px;
           }
@@ -574,10 +577,6 @@
           }
           .result {
             flex-direction: row;
-          }
-          .resultTexts__button1 {
-            float: right;
-            margin-right: 10px;
           }
           .results__img {
             max-width: calc(200px + (100vw - 768px) * 0.2);
@@ -642,36 +641,8 @@
             display: inline-block;
             transform: scaleY(2) translateX(0.1rem);
           }
-          .slide3 {
-            display: block;
-            width: 2rem;
-            height: 1.5rem;
-            color: #d35266;
-            background-color: #3a3a3a;
-            border: 0;
-            line-height: 1.5rem;
-            text-align: center;
-            font-weight: 900;
-            transition: all 200ms;
-            transform: translateX(-4rem) translateY(calc(335px - 2rem));
-          }
-          .slide3:hover {
-            transform: translateX(-4rem) translateY(calc(335px - 2rem)) scale(1.05);
-            box-shadow: 0 2px 3px 0 #888888;
-          }
-          .slide3-previous::after {
-            content: "<";
-            display: inline-block;
-            transform: scaleY(2);
-          }
-          .slide3-next::after {
-            content: ">";
-            display: inline-block;
-            transform: scaleY(2);
-          }
           .slide1:hover,
-          .slide2:hover,
-          slide3:hover {
+          .slide2:hover {
             transform: scaleX(1.1);
             margin: 5px 5px;
           }
