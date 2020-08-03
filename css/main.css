@@ -171,7 +171,7 @@
         }
         
         .button1-wider {
-          padding: 10px 30px;
+          padding: 10px 15px;
         }
         
         .filter {
@@ -362,6 +362,10 @@
         .result:hover {
           transform: scale(1.025);
           box-shadow: 0 0 10px #888888;
+        }
+        
+        .resultTexts__actionButtons {
+          display: none;
         }
         
         .results {
@@ -578,17 +582,25 @@
           .resultTexts {
             flex-grow: 3;
             width: max-content;
+            padding-left: 20px;
           }
           .result__slide3 {
             float: left;
-            transform: translateX(-100px) translateY(calc(200px + 10%));
+            position: absolute;
+            top: calc(100px + 10vw + 30px + 0.025 * (100vw - 768px) - 30px);
+          }
+          .result__slide3-previous {
+            /* transform: translateX(calc(30px + 0.025 * (100vw - 768px) + 100px + 15% - 50px)); */
+            left: calc(100px + 10vw + 30px + 0.025 * (100vw - 768px) - 100px);
+          }
+          .result__slide3-next {
+            left: calc(100px + 10vw + 30px + 0.025 * (100vw - 768px) - 50px);
           }
           .resultTexts__button1 {
-            float: right;
             margin-right: 10px;
           }
           .results__img {
-            width: calc(100px + 15%);
+            width: calc(100px + 10vw);
             height: 100%;
           }
           .results__resultsTitle {
@@ -597,6 +609,7 @@
           .results__result {
             width: 100%;
             height: min-content;
+            position: relative;
           }
           .search {
             display: block;
@@ -683,5 +696,23 @@
           slide3:hover {
             transform: scaleX(1.1);
             margin: 5px 5px;
+          }
+        }
+        
+        @media screen and (min-width:1024px) {
+          .resultTexts__actionButtons {
+            display: block;
+            position: absolute;
+            top: calc(100px + 10vw - 35px + 30px + 0.025 * (100vw - 768px));
+            left: calc(100% - 200px - 30px);
+          }
+        }
+        
+        @media screen and (min-width:2560px) {
+          .resultTexts__actionButtons {
+            display: block;
+            position: absolute;
+            top: calc(100px + 10vw - 35px + 30px + 0.025 * (100vw - 768px));
+            left: calc(100% - 200px - 800px);
           }
         }
