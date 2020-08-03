@@ -182,6 +182,10 @@
         
         .filterForm {}
         
+        .hidden {
+          display: none;
+        }
+        
         .hotAd {
           display: flex;
           justify-content: space-around;
