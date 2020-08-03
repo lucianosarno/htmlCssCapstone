@@ -326,8 +326,21 @@
           width: 100%;
         }
         
+        .results__result::after {
+          content: "resultTESTE";
+        }
+        
+        .resultTexts::after {
+          content: "resultTextsTESTE";
+        }
+        
+        main::after {
+          content: "mainTESTE";
+        }
+        
+        .results__result::after,
+        .resultTexts::after,
         .main::after {
-          content: "";
           display: block;
           clear: both;
         }
@@ -346,23 +359,33 @@
         .result {
           padding: 10px;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: flex-start;
+          background-color: white;
+          box-shadow: 0 0 3px #888888;
         }
         
         .results {
           padding: 15px 20px;
-          background-color: white;
+          background-color: #f6f6f6;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .results__result {
+          margin: 10px;
+          max-width: 300px;
         }
         
         .results__img {
-          width: 30%;
+          width: 100%;
           height: 100%;
-          max-width: 250px;
+          /* max-width: 250px; */
         }
         
         .results__resultsTitle {
           margin: 0;
+          width: 100%;
         }
         
         .resultsTitle {
