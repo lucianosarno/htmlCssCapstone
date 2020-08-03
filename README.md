@@ -2,7 +2,7 @@
 
 > This is the my Capstone Project for the HTML&CSS3 module of Microverse course. In this project I was required to create an Online Shop Website according to the specifications on https://www.behance.net/gallery/24796463/ZATTIX.
 
-![screenshot]()
+![screenshot](images/screenshot.png)
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/lucianosarno/htmlCssCapstone/5ae6ca435dd07e8a552bfd1dd7156635eedcdfca/index.html)
 
 ## Author
 
