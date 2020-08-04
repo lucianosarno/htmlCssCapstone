@@ -45,8 +45,8 @@
         
         .gallery__galleryItem {
           margin: 5px 0;
-          width: 45%;
-          min-width: 160px;
+          width: 40%;
+          min-width: 140px;
         }
         
         .galleryItem {
@@ -182,6 +182,10 @@
           background-color: white;
           line-height: 2rem;
           height: min-content;
+        }
+        
+        .d-none {
+          display: none;
         }
         
         .filter {
