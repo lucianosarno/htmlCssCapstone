@@ -29,6 +29,10 @@
           padding: 20px;
         }
         
+        .footer__copyright {
+          margin: 0 -20px;
+        }
+        
         .footer__logoText {
           display: block;
           margin: 10px auto;
@@ -175,13 +179,14 @@
         }
         
         .containerClear {
-          padding: 20px 0;
+          padding: 0;
         }
         
         .copyright {
           background-color: white;
           line-height: 2rem;
           height: min-content;
+          padding: 20px;
         }
         
         .d-none {
@@ -491,7 +496,7 @@
             display: none;
           }
           .copyright {
-            padding: 40px 0;
+            padding: 40px calc((100% - 688px)/2);
             border-top: 1px solid #888888;
           }
           .filter {
@@ -511,7 +516,6 @@
           }
           .footer__copyright {
             width: calc(100% + ((100% - 688px)));
-            padding: 40px calc((100% - 688px)/2);
             margin-left: calc(-1 * ((100% - 688px)/2));
             display: block;
           }
