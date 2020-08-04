@@ -663,10 +663,9 @@
           .slide2 {
             display: block;
             width: 2rem;
-            height: 305px;
             color: #383838;
             background-color: white;
-            line-height: 286.38px;
+            line-height: 373px;
             text-align: center;
             font-weight: 900;
             box-shadow: 1px 1px 2px 0 #888888;
@@ -680,7 +679,7 @@
           .slide2-next::after {
             content: ">";
             display: inline-block;
-            transform: scaleY(2) translateX(0.1rem);
+            transform: scaleY(2) translateX(-0.1rem);
           }
           .slide3 {
             display: block;
