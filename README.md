@@ -1,6 +1,6 @@
 # Capstone Project (Online shop)
 
-> This is the my Capstone Project for the HTML&CSS3 module of Microverse course. In this project I was required to create an Online Shop Website according to the specifications on https://www.behance.net/gallery/24796463/ZATTIX.
+> This is my Capstone Project for the HTML&CSS3 module of the Microverse course. In this project, I was required to create an Online Shop Website according to the specifications on https://www.behance.net/gallery/24796463/ZATTIX.
 
 ![screenshot](images/screenshot.png)
 
@@ -23,7 +23,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
 
@@ -38,7 +38,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is open licensed.
+This project is open-licensed.
 
 ## 📝 Credits
 
