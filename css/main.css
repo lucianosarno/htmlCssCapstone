@@ -41,7 +41,6 @@
           flex-direction: row;
           justify-content: space-evenly;
           flex-wrap: wrap;
-          /* padding: 5px 0; */
         }
         
         .gallery__galleryItem {
@@ -154,7 +153,8 @@
           text-decoration: none;
         }
         
-        .headerLink-home {
+        .headerLink-home,
+        .sectionTitle-footer {
           color: #d35266;
         }
         
@@ -182,7 +182,11 @@
         
         .filterForm {}
         
-        .hidden {
+        .hidden,
+        .main__hotAds,
+        .resultTexts__actionButtons,
+        .slide2,
+        .slide3 {
           display: none;
         }
         
@@ -324,11 +328,8 @@
           margin-bottom: 20px;
         }
         
-        .main__hotAds {
-          display: none;
-        }
-        
-        .main__header {
+        .main__header,
+        .main__results {
           width: 100%;
         }
         
@@ -336,10 +337,6 @@
           max-width: 768px;
           width: 100%;
           margin: auto;
-        }
-        
-        .main__results {
-          width: 100%;
         }
         
         .plusButton1 {
@@ -366,10 +363,6 @@
         .result:hover {
           transform: scale(1.025);
           box-shadow: 0 0 10px #888888;
-        }
-        
-        .resultTexts__actionButtons {
-          display: none;
         }
         
         .results {
@@ -439,11 +432,6 @@
           margin-left: 0.6rem;
         }
         
-        .slide2,
-        .slide3 {
-          display: none;
-        }
-        
         .slogan,
         .title {
           color: white;
@@ -458,10 +446,6 @@
           font-size: 1.1rem;
           line-height: 1.1rem;
           vertical-align: top;
-        }
-        
-        .sectionTitle-footer {
-          color: #d35266;
         }
         
         .sectionTitleComplement {
@@ -535,7 +519,6 @@
             ;
           }
           .gallery__galleryItem {
-            /* margin: 5px 0; */
             max-width: 20%;
           }
           .gallery__slide2 {
@@ -555,7 +538,6 @@
             width: calc(250px + 5%);
             height: 100%;
             margin: 0;
-            /* float: left; */
             opacity: 1;
             transform: scaleY(1);
           }
@@ -697,7 +679,6 @@
           .slide2:hover,
           slide3:hover {
             box-shadow: 0 0 5px #888888;
-            /* margin: 5px 5px; */
           }
         }
         
