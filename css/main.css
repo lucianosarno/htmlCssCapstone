@@ -197,8 +197,6 @@ html {
   padding: 20px;
 }
 
-.filterForm {}
-
 .hidden {
   visibility: hidden;
 }
@@ -375,7 +373,7 @@ html {
 }
 
 .result {
-  padding: calc(30px + 0.025*(100vw - 768px));
+  padding: calc(30px + 0.025 * (100vw - 768px));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -535,11 +533,9 @@ html {
   }
   .galleryItem:hover {
     max-width: 160px;
-    transform: scale(1.1);
     padding: 12.5px;
     margin: 0 20px;
-    transform: translateY(5px);
-    ;
+    transform: translateY(5px) scale(1.1);
   }
   .gallery__galleryItem {
     max-width: 20%;
@@ -590,7 +586,6 @@ html {
     flex-wrap: wrap;
   }
   .resultTexts__actionButtons {
-    display: block;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -707,12 +702,12 @@ html {
   }
   .slide1:hover,
   .slide2:hover,
-  slide3:hover {
+  .slide3:hover {
     box-shadow: 0 0 5px #888;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .resultTexts__actionButtons {
     display: block;
     position: absolute;
@@ -725,7 +720,7 @@ html {
   }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width: 2560px) {
   .resultTexts__actionButtons {
     display: block;
     position: absolute;
