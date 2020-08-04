@@ -1,11 +1,11 @@
 html {
   font-size: 12px;
-  font-family: Gotham, Helvetica;
+  font-family: Gotham, Arial, Helvetica, sans-serif;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -17,7 +17,7 @@ html {
 }
 
 .about {
-  color: #888888;
+  color: #888;
   text-align: justify;
   display: block;
   padding: 10px 0 0 0;
@@ -25,7 +25,7 @@ html {
 
 .footer {
   background-color: white;
-  border-top: 0.1px solid #888888;
+  border-top: 0.1px solid #888;
   padding: 20px;
 }
 
@@ -56,7 +56,7 @@ html {
 .galleryItem {
   background-color: white;
   padding: 10px;
-  box-shadow: 0 2px 3px 0 #888888;
+  box-shadow: 0 2px 3px 0 #888;
   transition: all 200ms;
 }
 
@@ -87,7 +87,7 @@ html {
 }
 
 .galleryItemPlace {
-  color: #888888;
+  color: #888;
   font-size: 0.8rem;
 }
 
@@ -108,7 +108,7 @@ html {
 }
 
 .header__button1 {
-  display: none
+  display: none;
 }
 
 .header__logoText {
@@ -133,8 +133,6 @@ html {
   display: block;
 }
 
-.label-field {}
-
 .link {
   text-decoration: none;
 }
@@ -146,13 +144,13 @@ html {
 }
 
 .logoText-footer {
-  color: #888888;
+  color: #888;
   width: max-content;
 }
 
 .headerLink {
   list-style: outside;
-  color: #888888;
+  color: #888;
   padding: 3px 5px;
   text-decoration: none;
 }
@@ -163,7 +161,7 @@ html {
 }
 
 .headerMenu {
-  color: #888888;
+  color: #888;
   list-style: none;
 }
 
@@ -195,7 +193,7 @@ html {
 
 .filter {
   background-color: #f6f6f6;
-  border-right: 1px solid #888888;
+  border-right: 1px solid #888;
   padding: 20px;
 }
 
@@ -368,8 +366,8 @@ html {
 .plusButton1 {
   width: 20px;
   height: 20px;
-  border: 1px solid #888888;
-  color: #888888;
+  border: 1px solid #888;
+  color: #888;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -382,13 +380,13 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
-  box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px #888;
   transition: all 300ms;
 }
 
 .result:hover {
   transform: scale(1.025);
-  box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888;
 }
 
 .results {
@@ -453,7 +451,7 @@ html {
 
 .searchFormElement-button {
   background-color: #383838;
-  color: #888888;
+  color: #888;
   height: 2rem;
   margin-left: 0.6rem;
 }
@@ -468,7 +466,7 @@ html {
 }
 
 .sectionTitle {
-  color: #888888;
+  color: #888;
   font-size: 1.1rem;
   line-height: 1.1rem;
   vertical-align: top;
@@ -496,8 +494,8 @@ html {
     display: none;
   }
   .copyright {
-    padding: 40px calc((100% - 688px)/2);
-    border-top: 1px solid #888888;
+    padding: 40px calc((100% - 688px) / 2);
+    border-top: 1px solid #888;
   }
   .filter {
     padding-left: 40px;
@@ -507,7 +505,7 @@ html {
     align-items: stretch;
   }
   .footer {
-    padding: 20px calc((100% - 688px)/4);
+    padding: 20px calc((100% - 688px) / 4);
   }
   .footer__categoriesBox {
     width: 50%;
@@ -516,7 +514,7 @@ html {
   }
   .footer__copyright {
     width: calc(100% + ((100% - 688px)));
-    margin-left: calc(-1 * ((100% - 688px)/2));
+    margin-left: calc(-1 * ((100% - 688px) / 2));
     display: block;
   }
   .footer__sectionTitle {
@@ -575,7 +573,7 @@ html {
   .main__hotAds {
     display: block;
     width: 100%;
-    padding: 20px calc((100% - 748px)/2);
+    padding: 20px calc((100% - 748px) / 2);
     margin: 0 auto;
   }
   .main__results {
@@ -641,7 +639,7 @@ html {
     width: 1.5rem;
     height: 1.5rem;
     color: #d35266;
-    border: 1px solid #888888;
+    border: 1px solid #888;
     border-radius: 1.5rem;
     line-height: 1.5rem;
     padding-left: -2rem;
@@ -668,7 +666,7 @@ html {
     line-height: 373px;
     text-align: center;
     font-weight: 900;
-    box-shadow: 1px 1px 2px 0 #888888;
+    box-shadow: 1px 1px 2px 0 #888;
     transition: all 200ms;
   }
   .slide2-previous::after {
@@ -695,7 +693,7 @@ html {
     transition: all 200ms;
   }
   .slide3:hover {
-    box-shadow: 0 2px 3px 0 #888888;
+    box-shadow: 0 2px 3px 0 #888;
   }
   .slide3-previous::after {
     content: "<";
@@ -710,7 +708,7 @@ html {
   .slide1:hover,
   .slide2:hover,
   slide3:hover {
-    box-shadow: 0 0 5px #888888;
+    box-shadow: 0 0 5px #888;
   }
 }
 
