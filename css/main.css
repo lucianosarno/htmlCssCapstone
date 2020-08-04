@@ -184,10 +184,14 @@
         
         .hidden,
         .main__hotAds,
-        .resultTexts__actionButtons,
         .slide2,
         .slide3 {
           display: none;
+        }
+        
+        .resultTexts__button1 {
+          width: 100%;
+          margin: 2.5px 0;
         }
         
         .hotAd {
@@ -564,10 +568,21 @@
           }
           .result {
             flex-direction: row;
+            flex-wrap: wrap;
+          }
+          .resultTexts__actionButtons {
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .resultTexts__button1 {
+            margin: 0;
+            width: 49%;
           }
           .resultTexts {
             flex-grow: 3;
-            width: max-content;
+            width: min-content;
             padding-left: 20px;
           }
           .result__slide3 {
@@ -580,9 +595,6 @@
           }
           .result__slide3-next {
             left: calc(100px + 10vw + 30px + 0.025 * (100vw - 768px) - 50px);
-          }
-          .resultTexts__button1 {
-            margin-right: 10px;
           }
           .results__img {
             width: calc(100px + 10vw);
@@ -686,8 +698,12 @@
           .resultTexts__actionButtons {
             display: block;
             position: absolute;
+            width: 250px;
             top: calc(100px + 10vw - 35px + 30px + 0.025 * (100vw - 768px));
-            left: calc(100% - 200px - 30px);
+            left: calc(100% - 250px - (30px + 0.025 * (100vw - 768px)));
+          }
+          .resultTexts__button1 {
+            width: 48%;
           }
         }
         
